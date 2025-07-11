@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: skyblue;
+}
+
+.topHeader{
+    position: fixed;
+    display: flex;
+    z-index: 100;
+    width: 100%;
+    background-color:blue;
+    padding: 0.5rem;
+    height: 6rem;
+}
+
+.topHeader img{
+    width: 80px;
+    height: 80px;
+    border-radius: 35px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.menuHorizontal{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.menuHorizontal li a{
+    text-decoration: none;
+    color: #ffff;
+    display: block;
+    padding: 1rem 1.25rem;
+}
+.menuHorizontal li a:hover{
+    color: black;
+    transition: 0.5s linear;
+}
+.menuVertical{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #a3d9a5;
+    border-radius: 20px;
+    width: 9rem;
+    position: absolute;
+    display: none;
+    transition: 0.5s linear;
+   
+}
+.menuHorizontal li:hover .menuVertical{
+    display: block;
+}
+.menuVertical li a{
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    color: green;
+}
+.menuVertical li a:hover{
+    background-color: green;
+    border-radius: 20px;
+    color: #ffff;
+}
+
+.Bienvenida{
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: url(bienvenida1.jpg);
+    background-size: cover;
+    height: 450px;
+    opacity: 0.7;
+}
+.Bienvenida h1{
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 5rem;
+}
+.MisionVision{
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #ffff;
+    color: black
+}
+.MisionVision h1{
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: black;
+}
+.ContenidoVM{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    width: 100%;
+}
+.imagenVM{
+    flex: 1;
+}
+
+.imagenVM img{
+    width: 80%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.textoVM{
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.textoVM p + p{
+    margin-top: 1rem;
+}
+
+.Platica{
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.Platica h1{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: green;
+}
+.ContenidoP{
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+.textoP{
+    font-size: 1rem;
+    flex: 1;
+    line-height: 1.6;
+}
+.videoP{
+    flex: 1;
+}
+.videoP iframe{
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.chat{
+    padding-top: 6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 3rem;
+}
+
+
+
+
+
+.footer {
+  background-color: #222; 
+  color: white;
+  padding: 2rem 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+
+.footer-brand {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+
+.footer-links {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.3rem 0;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+
+.footer-social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .topHeader {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .menuHorizontal {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menuHorizontal li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .menuVertical {
+        position: static;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .Bienvenida h1 {
+        font-size: 2.5rem;
+        margin-top: 50px;
+    }
+
+    .ContenidoVM, .ContenidoP {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .imagenVM img {
+        width: 100%;
+    }
+
+    .videoP iframe {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social img {
+    margin-bottom: 0.5rem;
+  }
+}
+.contacto {
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.contacto h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+}
+
+.contacto-contenido {
+  display: flex; /* Muestra el formulario y el texto lado a lado */
+  flex-direction: row;
+  gap: 3rem;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.formulario-contacto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+input,
+select,
+textarea {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.checkboxes label,
+.radios label {
+  margin-right: 1rem;
+}
+
+button[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #0051ba;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #003e91;
+}
+
+.contacto-instrucciones {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.mensaje-enviado {
+  margin-top: 1.5rem;
+  color: green;
+  font-weight: bold;
+}
+
+/* RESPONSIVE PARA MÓVILES */
+@media (max-width: 768px) {
+  .contacto-contenido {
+    flex-direction: column;
+  }
+
+  .formulario-contacto,
+  .contacto-instrucciones {
+    width: 100%;
+  }
+
+  .mensaje-enviado {
+    text-align: center;
+  }
+}

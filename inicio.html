@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <nav class="topHeader">
+        <img src="logo.jpg" alt="logo">
+        <ul class="menuHorizontal">
+            <li>
+                <a href="inicio.html">Quienes somos</a>
+                <ul class="menuVertical">
+                    <li><a href="#Bienvenida">Bienvenida</a></li>
+                    <li><a href="#myv">Mision y Vision</a></li>
+                    <li><a href="#pcn">Platica con nosotros</a></li>
+                    <li><a href="#contacto">Contactanos</a></li>
+                </ul>
+            </li>
+            <li><a href="consejos.html">Consejos</a></li>
+            <li><a href="chat.html">Chat</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+        </ul>
+    </nav>
+    <section class="Bienvenida" id="Bienvenida">
+        <h1>Bienvenido a ConTacto</h1>
+    </section>
+    
+    <section class="MisionVision" id="myv">
+        <h1>Mision y Vision</h1>
+        <div class="ContenidoVM">
+            <div class="imagenVM">
+                <img src="mv.jpg" alt="mv">
+            </div>
+            <div class="textoVM">
+                <p>
+                    Misión: Nuestra misión es apoyar a los padres y tutores de adolescentes, al proporcionarles 
+                    acceso a orientación y apoyo confiable que les permita construir relaciones sólidas, 
+                    y fomentar el bienestar integral de sus hijos.
+                </p>
+                <p>
+                    Visión: Nuestra visión es que ConTacto aspire a convertirse en la principal herramienta 
+                    de para padres y tutores que buscan apoyo y conocimiento para acompañar de la mejor forma 
+                    a sus hijos durante la adolescencia. Nos visualizamos liderando un cambio positivo en la dinámica 
+                    familiar, ayudando a las familias a mejorar la comprensión y la conexión y un entorno más ideal para 
+                    el crecimiento y desarrollo saludable de los adolescentes
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="Platica" id="pcn">
+        <h1>Platica con nosotros</h1>
+        <div class="ContenidoP">
+            <div class="textoP">
+                <p>
+                    Consulta tus pensamientos junto a un especialista u capacitate a traves de practicas funcionales
+                    en el entorno familiar.
+                </p>
+                <p>
+                    Descubre la adolecencia de ahora y recupera esa confianza en ellos.
+                </p>
+                <p> 
+                    El video expuesto permitira ver desde el angulo de los especialistas, gracias a BBVA, sobre como
+                    debemos acompañar a los adolecentes en esta etapa de su vida.
+                </p>
+            </div>
+            <div class="videoP">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ey4zFttyy2M?si=o4U7ZGKHj0nZntfy?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>  
+        </div>
+    </section>
+    <section class="contacto" id="contacto">
+      <h2>Contáctanos</h2>
+      <div class="contacto-contenido">
+
+        <form class="formulario-contacto" id="formularioContacto">
+          <div class="form-grupo">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="tipoDoc">Tipo de Documento:</label>
+            <select id="tipoDoc" name="tipoDoc">
+              <option value="dni">DNI</option>
+              <option value="pasaporte">Pasaporte</option>
+              <option value="carnet">Carnet de Extranjería</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="pais">Departamento:</label>
+            <select id="pais" name="pais">
+              <option value="Lima">Lima</option>
+              <option value="Arequipa">Arequipa</option>
+              <option value="Trujillo">Trujillo</option>
+              <option value="tacna">Tacna</option>
+              <option value="loreto">Loreto</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+
+          <div class="form-grupo">
+            <label for="asunto">Asunto:</label>
+            <textarea id="asunto" name="asunto" rows="3"></textarea>
+          </div>
+
+          <div class="form-grupo">
+            <label>Preferencias de contacto:</label>
+            <div class="checkboxes">
+              <label
+                ><input type="checkbox" name="preferencia" value="correo" />
+                Correo</label
+              >
+              <label
+                ><input type="checkbox" name="preferencia" value="telefono" />
+                Teléfono</label
+              >
+            </div>
+          </div>
+
+          <div class="form-grupo">
+            <label>¿Desea trabajar con nosotros?</label>
+            <div class="radios">
+              <label
+                ><input type="radio" name="estudiante" value="si" /> Sí</label
+              >
+              <label
+                ><input type="radio" name="estudiante" value="no" /> No</label
+              >
+            </div>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+
+        <div class="contacto-instrucciones">
+          <p>
+            El formulario nos hara nasber si te encuentras intersado
+            en trabajar en nosotro o si buscas de nuestros servicio
+            para su hijo(a) adolecente.
+          </p>
+          <p>
+            Recuerda usar un correo válido y seleccionar tu tipo de documento
+            correctamente. Si estas interesado en entrar a nuestro equipo, 
+            haznoslo saber llenando el formulario, gracias.
+          </p>
+          <div
+            id="mensajeEnviado"
+            class="mensaje-enviado"
+            style="display: none"
+          >
+            Mensaje enviado correctamente.
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img
+              src="logo.jpg"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>ConTacto</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="Politica-privacidad.pdf.pdf">Política de Privacidad</a>
+
+            <a href="Terminos y Condiciones v2.pdf">Términos y Condiciones</a>
+
+            <a href="Manual-de-Protección-de-Datos-Personales.pdf">Protección de Datos</a>
+          </div>
+
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="scrips.js"></script>
+</body>
+
+</html>
